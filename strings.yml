@@ -1,0 +1,128 @@
+Carz:
+  Prefix: '&0[&bCarz&0]&7 '
+  SignHeader: '&0[&bCarz&0]'
+  ConsoleCommands: 若要顯示所有指令，請輸入 &f/carzc cmds
+  ConfigReloaded: 設定已重新載入。
+  SignRemoved: Carz 標誌已移除！
+  CarsDestroyed: 所有汽車均被毀壞！
+  SignCreated: '&b%VALUE% &7sign 已建立。'
+  Heading: -- &9&l%VALUE% &r--
+Help:
+  Command: '&7/carz help &9%VALUE% &0: &7要了解有關此命令的更多資訊。'
+  Commands: 若要顯示所有指令，請輸入 &f/carz cmds
+  CommandSyntax: '&7語法：&f/carz %VALUE%'
+  CommandExample: '&7範例：&f%VALUE%'
+Car:
+  Spawned: 汽車生成。
+  EngineStart: 打開引擎。
+  EngineStop: 您關閉了引擎。
+  CarLocked: 您鎖上了汽車。
+  CarUnlocked: 您解鎖了汽車。
+  PlayerCar: '&b%VALUE%&f 的汽車'
+  FuelEmpty: 你的車沒油了！
+  LiquidDamage: 您的汽車已被液體損壞！
+  UpgradeSpeed: '新的最高速度：&b%VALUE%'
+  Key:
+    Display: '&b%VALUE%&f''s key'
+    Received: You receive a key.
+  Claimed: You are now the owner of this car.
+  OwnershipRemoved: You have removed ownership of this car.
+  Given: You have given &b%VALUE% &7your car.
+  Received: You have received a car from &b%VALUE%&7.
+Purchase:
+  Confirm:
+    Purchase: '&7Enter &a/carz confirm &7to confirm, or &c/carz cancel &7to cancel
+      the purchase.'
+    Car: You are about to purchase a &b%TYPE% &7car, costing &b%COST%%CURRENCY%&7.
+    Upgrade: You are about to upgrade your car from &b%FROM% &7to &b%TO%&7, costing
+      &b%COST%%CURRENCY%&7.
+    Refuel: You are about to refuel &b%PERCENT% &7of your car's fuel, costing &b%COST%%CURRENCY%&7.
+  Success:
+    Car: '&f%VALUE% &7car Purchased!'
+    Upgrade: Car Upgraded!
+    Refuel: Car Refuelled!
+  Cancelled: Purchase cancelled.
+CarType:
+  Heading: Car Types
+  Create:
+    Name: '&d What would you like this car to be called?'
+    StartMaxSpeed: |-
+      &d What should the Car's Start Speed be?
+      &a (default = 60.0)
+    MaxUpgradeSpeed: |-
+      &d What should the Car's Max Upgrade Speed be?
+      &a (default = 120.0)
+    Acceleration: |-
+      &d What should the Car's Acceleration be?
+      &a (default = 1.0)
+    FuelUsage: |-
+      &d What should the Fuel Usage be?
+      &a (default = 1.0)
+    FillMaterial: |-
+      &d What should the Fill Material be?
+      &a (default = AIR)
+    Cost: |-
+      &d How much should the car cost?
+      &a (default = 10.0)
+    Success: '&d All done, &a%VALUE% &dcreated.'
+  Removed: '&b%VALUE% &7removed.'
+  Error:
+    InvalidName: Invalid Car Type name.
+    InvalidValue: Invalid Value.
+    AlreadyExists: This Car Type already exists.
+BlockTypes:
+  Added:
+    List: '&b%MATERIAL% &7added to &b%TYPE% &7blocks.'
+    Amount: '&b%MATERIAL% &7added to &b%TYPE% &7blocks, with an amount of &b%AMOUNT%&7.'
+  Removed: '&b%MATERIAL% &7removed from &b%TYPE% &7blocks.'
+CarStore:
+  Heading: Car Store
+  Setup:
+    Line1: '         '
+    Line2: ' ggggggg '
+    Line3: '  fp nl  '
+  Material:
+    Filler: GRAY_STAINED_GLASS
+CarDetails:
+  Heading: Car Details
+  Type: '&fCar Type: &b%VALUE%'
+  MaxSpeed: '&fMax Speed: &b%VALUE%'
+  CurrentSpeed: '&fCurrent Speed: &b%VALUE%'
+  Acceleration: '&fAcceleration: &b%VALUE%'
+  FuelUsage: '&fFuel Usage: &b%VALUE%'
+  Cost: '&fCost: &b%VALUE%'
+  Fuel: '&fFuel: &b%VALUE%'
+PlaceholderAPI:
+  NoCar: Not Driving
+Error:
+  NoPermission: 'You do not have permission: &4%VALUE%'
+  SignProtected: This sign is protected.
+  UnknownCommand: Unknown Command.
+  UnknownSignCommand: Unknown Sign Command.
+  CommandDisabled: This command has been disabled.
+  InCar: You are already in a car.
+  NotInCar: You are not in a car.
+  InvalidPlaceLocation: Please place your car somewhere valid.
+  HaveCar: You already have a car.
+  FuelDisabled: Fuel is disabled.
+  PurchaseFailed: 'Purchase failed. Cost: &4%VALUE%'
+  FullyUpgraded: Your car is already fully upgraded.
+  Owned: This car is owned by &b%VALUE%
+  UnknownCarType: Unknown car type.
+  UnknownPlayer: Unknown player.
+  UnknownMaterial: 'Unknown Material: &4%VALUE%'
+  SpecifyPlayer: Please specify a player.
+  PurchaseOutstanding: You have an outstanding purchase.
+  NoPurchaseOutstanding: You don't have an outstanding purchase.
+  CarNotDriven: This car hasn't been driven yet.
+  NoOwnership: This car doesn't have an owner.
+  NotHoldingCar: You need to be holding a Car to give it.
+  TooMany: Too many arguments! (%VALUE%)
+  TooLittle: Not enough arguments! (%VALUE%)
+  OwnedCarsLimit: You have reached the amount of Owned cars you can place.
+  InvalidPlaceableMaterial: You are unable to place a Car here.
+  InvalidNumber: '&4%VALUE% &7is not a valid number.'
+  BlockTypes:
+    Invalid: 'Invalid Block Type. Valid options: speed, climb, launch, placeable'
+    AlreadyExists: '%MATERIAL% is already a %TYPE% block.'
+    SpecifyAmount: 'Invalid Syntax: /carz add %VALUE% (material) (amount)'
