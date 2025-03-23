@@ -1,0 +1,65 @@
+# ==== Carz Config ==== #
+
+Key:
+  Material: STICK
+  Glow: true
+  GiveOnCarEnter: true
+  RequireCarzKey: true
+  AutomaticLocking: true
+  SneakLockAction: true
+CarItem:
+  DisplayOwner: true
+  DisplaySummaryInformation: true
+Speed:
+  Upgrade:
+    Increment: 25.0
+CommandEnabled:
+  Spawn: true
+  Purchase: true
+  Refuel: true
+  Upgrade: true
+  Store: true
+  Give: true
+Fuel:
+  Enabled: true
+  ScaleCost: true
+  MaxCapacity: 3000.0
+  GaugeScale: 40
+ClimbBlocks:
+  AllSlabs: true
+  Strength: 0.25
+Other:
+  ControlCarsWhileFalling: true
+  DamageEntities:
+    Enabled: false
+    Damage: 5.0
+  DestroyInLiquid: true
+  DisableFallDamage: false
+  OnlyOwnedCarsDrive: false
+  MaxPlayerOwnedCars: 5
+  PreventCarPurchaseWhenExisting: false
+  SignProtection: true
+  StartCarOnVehicleEnter: false
+  UpdateCheck: true
+  UseAutoTabCompletion: true
+  UseEffects: true
+  UsePermissions: true
+Version: 7.2
+CarTypes:
+  default:
+    StartMaxSpeed: 60.0
+    MaxUpgradeSpeed: 200.0
+    Acceleration: 5.0
+    FuelUsage: 1.0
+    FillMaterial: AIR
+    Cost: 10.0
+BountifulAPI:
+  Enabled: false
+Vault:
+  ConfirmPurchases: true
+  Cost:
+    Upgrade: 8.0
+    Refuel: 2.0
+  Enabled: false
+PlaceholderAPI:
+  Enabled: false
